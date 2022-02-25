@@ -92,7 +92,7 @@ document.writeln("The sum of the numbers is: " + sumNumbers);
 
 
 /*------------------------------------------------------------------------*/
-                        /////* SNACK 3 */////
+                        /////* SNACK 4 */////
 
 /* In un array sono contenuti i nomi degli invitati alla festa del grande
 Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o
@@ -118,3 +118,45 @@ if (onList == true) {
 }
 */
 
+
+/*------------------------------------------------------------------------*/
+                        /////* SNACK 5 */////
+
+/* 
+Crea un array vuoto.
+Chiedi per 6 volte all’utente di inserire un numero,
+se è dispari inseriscilo nell’array. 
+*/
+
+/*
+let arrOddNumbers = [];
+
+for (let i = 0; i < 6; i++) {
+    let userNumber = parseInt(prompt("Type a number")); 
+    if (userNumber % 2 == 1) {
+        arrOddNumbers.push(userNumber);
+    }
+}
+
+document.writeln("These numbers are the odd ones: " + arrOddNumbers);
+*/ 
+
+
+/*------------------------------------------------------------------------*/
+                        /////* SNACK 6 */////
+
+/* Chiedi un numero di 4 cifre all’utente e calcola la somma di tutte le cifre che compongono il numero.*/
+let number = prompt("Type a 4-digit number");
+
+if (number < 1000 || number > 9999 || number == " ") {
+    document.writeln("Please try again and type a 4-digit number");
+    
+} else {
+    let singleNumberFromDIgit = [...number];
+    let sumNumbers = 0;
+
+    for (let i = 0; i < singleNumberFromDIgit.length; i++){
+        sumNumbers += parseInt(singleNumberFromDIgit[i]);
+    }
+    document.writeln("The sum of the numbers is: " + sumNumbers);
+}
