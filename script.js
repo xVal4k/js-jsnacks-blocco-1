@@ -89,3 +89,32 @@ for (let i = 0; i < numbers.length; i++) {
 
 document.writeln("The sum of the numbers is: " + sumNumbers);
 */
+
+
+/*------------------------------------------------------------------------*/
+                        /////* SNACK 3 */////
+
+/* In un array sono contenuti i nomi degli invitati alla festa del grande
+Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o
+no alla festa. */
+
+/*
+let arrNouns = ["Nick Carraway", "Daisy Buchanan", "Tom Buchanan", "Jordan Baker", "Myrtle Wilson", "George Wilson", "Meyer Wolfsheim", "Catherine", "Owl Eyes", "Dan Cody" ];
+
+let guestName = prompt("Type your name & surname");
+
+let onList = false;
+
+for (let i = 0; i < arrNouns.length; i++) {
+    if (guestName.toUpperCase() == arrNouns[i].toUpperCase()) {
+        onList = true;
+    }
+}
+
+if (onList == true) {
+    document.writeln("Welcome, " + guestName + " !");
+} else {
+    document.write("We're sorry Sir but your name is not on the list")
+}
+*/
+
