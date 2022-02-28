@@ -221,3 +221,73 @@ document.writeln("This is the average value of your numbers: " + average);
 /* Il software deve chiedere per 5 volte all’utente di inserire un numero.
 Il programma stampa la somma di tutti i numeri inseriti.
 Esegui questo programma in due versioni, con il for e con il while. */
+
+
+/* METHOD WITH FOR */
+
+/*
+let userNumbers = [];
+let sum = 0;
+
+for (let i = 0; i < 5; i++) {
+    let inputNumbers = parseInt(prompt("Type a number"));
+    userNumbers.push(inputNumbers);
+    sum += inputNumbers;
+}
+
+document.writeln("These are your typed numbers: " + userNumbers);
+document.writeln("This is their sum: " + sum);
+*/
+
+
+/* METHOD WITH WHILE */
+
+/*
+let userNumbers = [];
+let sum = 0;
+
+for (let i = 0; i < 5; i++) {
+    let inputNumbers = parseInt(prompt("Type a number"));
+    userNumbers.push(inputNumbers);
+}
+
+let i = 0;
+while (i < userNumbers.length) {
+    sum += i;
+    i++;
+}
+
+document.writeln("These are your typed numbers: " + userNumbers);
+document.writeln("This is their sum: " + sum);
+*/
+
+
+/*------------------------------------------------------------------------*/
+                        /////* SNACK 2.2 */////
+
+
+
+/* Inserisci un numero, se è pari stampa il numero,
+se è dispari stampa il numero successivo. */
+
+let userNumbers = [];
+let inputNumber;
+let evenNumbers = [];
+
+while ((inputNumber = parseInt(prompt("Type a number"))) != 0 ) {
+    userNumbers.push(inputNumber);
+    inputNumber++;
+}
+
+document.writeln("These are your typed numbers: " + userNumbers);
+
+for (let i = 0; i < userNumbers.length; i++) {
+    
+    if (userNumbers[i] % 2 == 1) {
+        userNumbers[i] += 1;
+        evenNumbers.push(userNumbers[i]);
+    } else if (userNumbers[i] % 2 == 0) {
+        evenNumbers.push(userNumbers[i]);
+    }
+}
+document.writeln("These are the even numbers; 1 was added to the odd numbers : " + evenNumbers);
