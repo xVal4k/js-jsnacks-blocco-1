@@ -146,6 +146,8 @@ document.writeln("These numbers are the odd ones: " + arrOddNumbers);
                         /////* SNACK 1.6 */////
 
 /* Chiedi un numero di 4 cifre all’utente e calcola la somma di tutte le cifre che compongono il numero.*/
+
+/*
 let number = prompt("Type a 4-digit number");
 
 if (number < 1000 || number > 9999 || number == " ") {
@@ -160,3 +162,62 @@ if (number < 1000 || number > 9999 || number == " ") {
     }
     document.writeln("The sum of the numbers is: " + sumNumbers);
 }
+*/
+
+/*------------------------------------------------------------------------*/
+                        /////* SNACK 1.9 */////
+
+
+
+/* Calcola la somma e la media dei primi 10 numeri */
+
+/* METHOD WITH FOR */
+
+/*
+let sum = 0;
+let average = 0;
+
+for (let i = 1; i <= 10; i++) {
+    sum += i;
+    average = sum / i;
+}
+
+document.writeln("The sum of the numbers 1-10 is: " + sum);
+document.writeln("The average value of the numbers 1-10 is: " + average);
+/*
+
+
+/* METHOD WITH WHILE */
+
+/*
+let arrNum = [];
+
+for (let i = 0; i < 10; i++) {
+    let userNumbers = parseInt(prompt("Type a number between 1 and 10 !=0"));
+    arrNum.push(userNumbers);
+}
+
+let sum = 0;
+let average = 0;
+
+let i = 0;
+while (i < arrNum.length) {
+    sum += arrNum[i];
+    average = sum / arrNum[i];
+    i++;
+}
+
+document.writeln("These are your numbers: " + arrNum);
+document.writeln("This is their sum: " + sum);
+document.writeln("This is the average value of your numbers: " + average);
+*/
+
+
+/*------------------------------------------------------------------------*/
+                        /////* SNACK 2.1 */////
+
+
+
+/* Il software deve chiedere per 5 volte all’utente di inserire un numero.
+Il programma stampa la somma di tutti i numeri inseriti.
+Esegui questo programma in due versioni, con il for e con il while. */
