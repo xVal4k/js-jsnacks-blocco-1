@@ -270,6 +270,8 @@ document.writeln("This is their sum: " + sum);
 /* Inserisci un numero, se è pari stampa il numero,
 se è dispari stampa il numero successivo. */
 
+
+/*
 let userNumbers = [];
 let inputNumber;
 let evenNumbers = [];
@@ -291,3 +293,49 @@ for (let i = 0; i < userNumbers.length; i++) {
     }
 }
 document.writeln("These are the even numbers; 1 was added to the odd numbers : " + evenNumbers);
+*/
+
+
+
+/*------------------------------------------------------------------------*/
+                        /////* SNACK 2.3 */////
+
+
+
+/* Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, 
+Gatsby vuole generare una falsa lista di 3 invitati. */
+
+
+/* METHOD WITH FOR */
+
+/*
+let nouns = ["Agostino", "Alberto", "Alessandro", "Alessio", "Alfio", "Alfonso", "Amedeo", "Angelo", "Antonio", "Aurelio"];
+let surnames = ["Rossi", "Ferrari", "Russo", "Bianchi", "Romano", "Gallo", "Costa", "Fontana", "Conti", "Esposito"];
+let fullName = [];
+
+for (let i = 0; i < 3; i++) {
+    let nameRandom = Math.floor(Math.random() * nouns.length);
+    let surnameRandom = Math.floor(Math.random() * surnames.length);
+    fullName.push(nouns[nameRandom] + " " + surnames[surnameRandom]);
+}
+
+document.writeln("These are your 3 new guests: " + fullName);
+*/
+
+
+/* METHOD WITH WHILE */
+
+
+let nouns = ["Agostino", "Alberto", "Alessandro", "Alessio", "Alfio", "Alfonso", "Amedeo", "Angelo", "Antonio", "Aurelio"];
+let surnames = ["Rossi", "Ferrari", "Russo", "Bianchi", "Romano", "Gallo", "Costa", "Fontana", "Conti", "Esposito"];
+let fullName = [];
+
+let i = 0;
+while (i < 3) {
+    let nameRandom = Math.floor(Math.random() * nouns.length);
+    let surnameRandom = Math.floor(Math.random() * surnames.length);
+    fullName.push(nouns[nameRandom] + " " + surnames[surnameRandom]);
+    i++;
+}
+
+document.writeln("These are your 3 new guests: " + fullName);
